@@ -197,8 +197,7 @@ import streamlit as st
 from supabase import create_client
 
 # This pulls the "wires" from the Streamlit Secrets box
-url = st.secrets["https://fgdujxyepmgclimcpwgl.supabase.co"]
-key = st.secrets["sb_publishable_yGb5vK50XCUc9xQvkIhXZg_5UJJxEAT"]
-
+url = st.secrets["SUPABASE_URL"]
+key = st.secrets["SUPABASE_KEY"]
 # This creates the actual connection
 supabase = create_client(url, key)
