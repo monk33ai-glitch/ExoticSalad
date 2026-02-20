@@ -71,7 +71,7 @@ def get_all_plants():
 
 # --- AI RESEARCH ---
 def perform_research(common, scientific, description):
-    api_key = st.secrets.get("API_KEY") or os.environ.get("API_KEY")
+    api_key = st.secrets.get("gen-lang-client-0651710481") or os.environ.get("API_KEY")
     
     if not api_key:
         st.warning("API_KEY not found in Secrets or Environment. Research capabilities are offline.")
