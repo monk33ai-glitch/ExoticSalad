@@ -196,8 +196,10 @@ elif page == "System Tools":
 import streamlit as st
 from supabase import create_client
 
-# This pulls the "wires" from the Streamlit Secrets box
-url = st.secrets["SUPABASE_URL"]
-key = st.secrets["SUPABASE_KEY"]
+
+# Temporary Hard-Wire Bypass
+url = "https://fgdujxyepmgclimcpwgl.supabase.co"
+key = "sb_publishable_yGb5vK50XCUc9xQvkIhXZg_5UJJxEAT"
+
 # This creates the actual connection
 supabase = create_client(url, key)
